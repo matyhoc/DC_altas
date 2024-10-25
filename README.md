@@ -20,15 +20,26 @@ Codes for the calculation and visualization of Ro/e score for cDC2 subsets and L
 
 ## 005_Other_analysis.R
 **Part 1.** Caluculate signature scores for LAMP3+ DCs.
+
 **Part 2.** Infer cellular origins of LAMP3+ DCs by SingleR.
+
 **Part 3.** Show distribution of LAMP3+ DC cellular origins across cancer types.
-**Part 4**. Identify marker genes for LAMP3+ DCs with different cellular origins
+
+**Part 4**. Identify marker genes for LAMP3+ DCs with different cellular origins.
+
 **Part 5.** Calculate enriched pathways for the marker genes.
+
 **Part 6**. Visualization of IL15, CCL19 and CXCL9 in LAMP3+ DCs of different origins.
+
 **Part 7.** Ternary plot showing cDC1, cDC2, LC-like signature scores for cDC1, cDC2, LC-like and LAMP3+ DCs.
+
 **Part 8.** Correlation analyses between cDC1-derived LAMP3+ DC, cDC2-derived LAMP3+ DC and LC-like-derived LAMP3+ DC proportions and CD8 T proportions.
+
 **Part 9.** Monocle2 for LAMP3+ DCs, cDC1, cDC2 and LC-like DCs.
+
 **Part 10.** Scenic for AS DC.
+
 **Part 11.** GSVA for cDC2 subsets.
+
 **Part 12.** SingleR for LC-like DC subset.
 
