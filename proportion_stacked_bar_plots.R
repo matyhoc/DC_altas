@@ -1,9 +1,11 @@
 # plot cell numbers
+*********************************************************************
 library(patchwork)
 library(reshape2)
 library(ggplot2)
 library(tidyverse)
 library(scales)
+*********************************************************************
 ##### DC_proportion_by_cancer
 metadata <- read.csv("/data2/maty/DC/script/DC_merge/h5ad/DC_raw_0611.csv")
 
