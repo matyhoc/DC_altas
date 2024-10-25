@@ -1,7 +1,9 @@
 # Calculate ROGUE index
+*********************************************************************
 suppressMessages(library(ROGUE))
 suppressMessages(library(ggplot2))
 suppressMessages(library(tidyverse))
+*********************************************************************
 data <- readRDS('/data2/maty/DC/script/DC_merge/R/DC_raw_celltype_tissue.rds')
 sample_counts <- table(data@meta.data$sample_tissue)
 selected_samples <- names(sample_counts[sample_counts >= 100])
@@ -13,11 +15,13 @@ rogue.value <- CalculateRogue(ent.res, platform = "UMI")
 rogue.res <- rogue(data[['RNA']]@counts, labels = data@meta.data$celltype, samples = data@meta.data$sample_tissue, platform = "UMI", span = 0.9)
 write.csv(rogue.res,'rogue.res.csv')
 # Visulization
+*********************************************************************
 library(ggpubr)
 library(patchwork)
 library(ggsci)
 library(reshape2)
 library(plyr)
+*********************************************************************
 rogue.res <- read.csv("/data2/maty/DC/script/DC_merge/R/rogue.res.csv")
 rogue.res_melted_data <- melt(rogue.res, id.vars = "X")
 df = rogue.res_melted_data
