@@ -1,8 +1,10 @@
+*********************************************************************
 library(plyr)
 library(ggplot2)
 library(ggpubr)
 library(reshape2)
 rm(list=ls())
+*********************************************************************
 ##### AS DC and LC-like across various cancer types
 metadata <- read.csv("/data2/maty/DC/script/DC_merge/h5ad/DC_raw_0611.csv")
 metadata_filt <- metadata[metadata$Tissue=='Tumor',]
