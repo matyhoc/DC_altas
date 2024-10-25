@@ -1,7 +1,9 @@
+*********************************************************************
 library(dplyr)
 options(stringsAsFactors=FALSE)
 library(reticulate)
 library(pheatmap)
+*********************************************************************
 ROIE <- function(crosstab){
   ## Calculate the Ro/e value from the given crosstab
   ##
